@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81D6829LG0');
+  </script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Seeing Just Enough: The Contribution of Hands, Objects and Visual Features to Egocentric Action Recognition",
+    "author": [
+      { "@type": "Person", "name": "Filip Rybansky" },
+      { "@type": "Person", "name": "Sadegh Rahmaniboldaji" },
+      { "@type": "Person", "name": "Andrew Gilbert" },
+      { "@type": "Person", "name": "Frank Guerin" },
+      { "@type": "Person", "name": "Anya C. Hurlbert" },
+      { "@type": "Person", "name": "Quoc C. Vuong" }
+    ],
+    "datePublished": "2026-02-17",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.64898/2026.02.15.705896"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "bioRxiv"
+    },
+    "url": "https://andrewjohngilbert.github.io/VisualFeats/",
+    "image": "assets/VisualFeatsTeaserWide.jpg",
+    "description": "We combine semantic modelling and feature reduction methods to identify the contribution of hands, objects and mid- to high-level visual features to egocentric action recognition in challenging home environments."
+  }
+  </script>
+
+  <!-- Social share buttons -->
+  <div class="social-share">
+    <p>Share this research:</p>
+    <a href="https://twitter.com/intent/tweet?url=https://andrewjohngilbert.github.io/VisualFeats/&text=Seeing Just Enough: Hands, Objects and Visual Features for Egocentric Action Recognition" target="_blank" class="button is-small is-info">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://andrewjohngilbert.github.io/VisualFeats/" target="_blank" class="button is-small is-link">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
+
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources.">
-  <meta property="og:title" content="DECORAIT - DECentralized Opt-in/out Registry for AI Training"/>
-  <meta property="og:description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/Decorait/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/teaser_fixed.png" />
+
+  <!-- Meta tags -->
+  <meta name="description" content="Seeing Just Enough: the contribution of hands, objects and mid- to high-level visual features to egocentric action recognition. Explore our bioRxiv preprint, data and analysis code.">
+  <meta property="og:title" content="Seeing Just Enough: Hands, Objects and Visual Features for Egocentric Action Recognition"/>
+  <meta property="og:description" content="We identify which hands, objects and visual features are critical for recognising actions from challenging egocentric videos using minimal video configurations."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/VisualFeats/"/>
+
+  <meta property="og:image" content="assets/VisualFeatsTeaserWide.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="DECORAIT - DECentralized Opt-in/out Registry for AI Training">
-  <meta name="twitter:description" content="We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources.">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="Seeing Just Enough: Hands, Objects and Visual Features for Egocentric Action Recognition">
+  <meta name="twitter:description" content="bioRxiv preprint on the contribution of hands, objects and visual features to egocentric action recognition using minimal recognisable configurations.">
+  <meta name="twitter:image" content="assets/VisualFeatsTeaserWide.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+
+  <meta name="keywords" content="egocentric action recognition, minimal video, hierarchical feature extraction, spatiotemporal features, SHAP, feature importance, semantic modelling, Filip Rybansky, Sadegh Rahmaniboldaji, Andrew Gilbert, Frank Guerin, Anya Hurlbert, Quoc Vuong">
+  <meta name="author" content="Filip Rybansky, Sadegh Rahmaniboldaji, Andrew Gilbert, Frank Guerin, Anya C. Hurlbert, Quoc C. Vuong">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>Seeing Just Enough: Hands, Objects and Visual Features for Egocentric Action Recognition</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,169 +89,263 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
-
+  <!-- Title / authors -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DECORAIT - DECentralized Opt-in/out Registry for AI Training </h1>
+            <h1 class="title is-1 publication-title">
+              Seeing Just Enough: The Contribution of Hands, Objects and Visual Features to Egocentric Action Recognition
+            </h1>
+
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
-                <a href="F" target="_blank">Kar Balan</a><sup>[1]</sup>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.co.uk/citations?user=Xzt0ib0AAAAJ&hl=en&inst=15262737669262836719&oi=sra" target="_blank">Alex Black</a><sup>[1]</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.co.uk/citations?user=AlA3q94AAAAJ&hl=en&inst=15262737669262836719&oi=sra" target="_blank">Simon Jenni</a><sup>[2]</sup>,</span>
-                  <span class="author-block">
-                    <a href="S" target="_blank"> Andy Parsons </a><sup>[2]</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>[1]</sup>,</span>
-                  <span class="author-block">
-                    <a href="http://personal.ee.surrey.ac.uk/Personal/J.Collomosse/" target="_blank">John Collomosse</a>[1,2]
-                  </span>
-                  </div>
+                <a href="https://github.com/filip1O" target="_blank">Filip Rybansky*</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/sadegh-rahmani" target="_blank">Sadegh Rahmaniboldaji*</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/annahurlbert.html" target="_blank">Anya C. Hurlbert</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc C. Vuong</a><sup>1</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Unviersity of Surrey[1], Adobe Resarch [2]<br>​​The 20th ACM SIGGRAPH European Conference on Visual Media Production</span>
-                
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                * These authors contributed equally<br>
+                <sup>1</sup>Newcastle University   
+                <sup>2</sup>University of Surrey<br>
+                bioRxiv preprint, doi:
+                <a href="https://doi.org/10.64898/2026.02.15.705896" target="_blank">
+                  10.64898/2026.02.15.705896
+                </a> (2026)
+              </span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/Decorait/assets/CVMP_DECORAIT.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <!-- Links: paper, code, data -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <span class="link-block">
+                  <a href="assets/SeeingJustEnoughPaper.pdf" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper (bioRxiv)</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link -->
-<!--                  <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
--->  
-                  <!-- Github link -->
-              <!--    <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+
+                <span class="link-block">
+                  <a href="https://github.com/filip1O/Seeing-Just-Enough-The-Contribution-of-Visual-Features-to-Egocentric-Action-Recognition" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code & Data</span>
                   </a>
                 </span>
-              -->
 
-                
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+  <!-- Short tagline -->
+  <section class="hero is-light">
     <div class="hero-body">
-      <img src="assets/dreamboothpipeline_.png">
-      <h2 class="subtitle has-text-centered">
-        The DECORAIT and Dreambooth pipeline including registry querying and model personalization flow. The Dreambooth model is specialized using the 3 opted-in images of a car and the proposed apportionment algorithm is applied across the image corpus. The red cross indicated images which have been opted-out according to the DECORAIT registry. The resulting apportionment conducted on the generated synthetic image from the experiment as described in Sec.\ref{eval_dreambooth} is shown. The DLT wallet addresses of the three authors of the images are identified using the accompanying C2PA manifests. Payment is then conducted automatically, securely, and transparently using DLT, and one transaction's confirmation is pictured. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present DECORAIT; a decentralized registry through which content creators may assert their right to opt in or out of AI training as well as receive reward for their contributions.  Generative AI (GenAI) enables images to be synthesized using AI models trained on vast amounts of data scraped from public sources. Model and content creators who may wish to share their work openly without sanctioning its use for training are thus presented with a data governance challenge. Further, establishing the provenance of GenAI training data is important to creatives to ensure fair recognition and reward for their such use.  We report a prototype of DECORAIT, which explores hierarchical clustering and a combination of on/off-chain storage to create a scalable decentralized registry to trace the provenance of GenAI training data in order to determine training consent and reward creatives who contribute that data. DECORAIT combines distributed ledger technology (DLT) with visual fingerprinting, leveraging the emerging C2PA (Coalition for Content Provenance and Authenticity) standard to create a secure, open registry through which creatives may express consent and data ownership for GenAI.
-          </p>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h2 class="subtitle is-4">
+              What visual information is just enough for humans to recognise everyday actions from egocentric videos?
+            </h2>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
-<!-- Paper poster -->
-<!--
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
--->
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{Balan:CVMP:2023,
-        AUTHOR = Balan, Kar and Black, Alex and Jenni, Simon  and Parsons, Andy and  Gilbert Andrew and Collomosse, John",
-        TITLE = "DECORAIT - DECentralized Opt-in/out Registry for AI Training​",
-        BOOKTITLE = " The 20th ACM SIGGRAPH European Conference on Visual Media Production",
-        YEAR = "2023",
-        ​}</code></pre>
+  <!-- Teaser image -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="assets/VisualFeatsSystem.jpg" alt="Pipeline for identifying critical hands, objects and visual features for egocentric action recognition">
+        <h2 class="subtitle has-text-centered">
+          We combine a language-model based semantic labelling framework with a recursive video reduction paradigm to identify minimal recognisable configurations (MIRCs) for egocentric actions. From these MIRCs, we quantify the contribution of hands, manipulated objects, scene background and mid-level visual features such as orientation and motion signals to human action recognition.
+        </h2>
+      </div>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Humans recognise everyday actions without conscious effort despite challenges such as poor viewing conditions and visual similarity between actions. Yet the visual features contributing to action recognition remain unclear. To address this, we combined semantic modelling and feature reduction methods to identify critical features for recognising actions from challenging egocentric perspectives. We first identified egocentric action videos from home environments that a motion-focused action classification network could correctly classify (Easy videos) or not (Hard videos). In Experiment 1, participants labelled the action and object in the videos. Using a language model framework, we derived human ground truth labels for each video and quantified its recognition consistency based on semantic similarity.
+            </p>
+            <p>
+              In Experiment 2, we recursively reduced the Easy and Hard videos with high recognition consistency to extract minimal recognisable configurations (MIRCs), in which any further spatial or temporal reductions disrupted recognition. The data were collected using a large-scale online study. From the 474 MIRCs, we extracted information related to the hand, objects, scene background and visual features (e.g. orientation or motion signals). Binary classification showed that recognition was disrupted when regions containing the manipulated object and strong orientation signals were removed, while temporal reduction by frame-scrambling disrupted recognition in most MIRCs. The active hand had some marginal contribution. Our results highlight the importance of both mid- and high-level information for egocentric action recognition and link hierarchical feature theories with naturalistic human perception.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Call to action -->
+  <section class="section cta">
+    <div class="container has-text-centered">
+      <h2 class="title is-4">Want to explore the details?</h2>
+      <p>Download the full preprint or browse the analysis code and data used to derive minimal recognisable configurations and feature importance.</p>
+      <a href="assets/SeeingJustEnoughPaper.pdf" class="button is-primary is-rounded">Download Paper</a>
+      <a href="https://github.com/filip1O/Seeing-Just-Enough-The-Contribution-of-Visual-Features-to-Egocentric-Action-Recognition" class="button is-link is-rounded" target="_blank">Code & Data</a>
+    </div>
+  </section>
 
-    <!-- End of Statcounter Code -->
+  <!-- Dataset / stimuli description -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3">Egocentric Minimal Video Stimuli</h2>
+        <!-- TODO: replace with appropriate figure(s) -->
+        <img src="assets/VisualFeatsDatasetOverview.jpg" alt="Overview of egocentric action videos and minimal recognisable configurations">
+        <h2 class="subtitle has-text-centered">
+          We start from 237 egocentric kitchen videos from the EPIC-KITCHENS-100 dataset and derive robust human ground truth labels using a semantic similarity framework. From consistently recognised Easy and Hard videos, we recursively crop and temporally scramble the videos to obtain 474 minimal recognisable configurations (MIRCs) and their spatial and spatiotemporal variants. These stimuli allow us to probe which regions and features are indispensable for human action recognition.
+        </h2>
+        <img src="assets/VisualFeatsTeaser.jpg" alt="Examples of spatial and spatiotemporal MIRCs">
+      </div>
+    </div>
+  </section>
 
-  </body>
-  </html>
+  <!-- Key findings -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3">Key Findings</h2>
+        <!-- TODO: replace with a results figure (e.g. feature importance / recognition gap) -->
+        <img src="assets/VisualFeatsResults.jpg" alt="Summary of recognition decline and feature importance">
+        <h2 class="subtitle has-text-centered">
+          Recognition of egocentric actions is strongly constrained by the visibility of the actively manipulated object and by mid-level orientation signals in the scene. Removing these regions leads to sharp recognition breakdowns, even when hands remain visible. Background regions tend to be less informative or even detrimental. Temporal scrambling of MIRCs reveals additional spatiotemporal configurations whose recognition depends on motion, but our feature set suggests that this critical motion is not easily captured by simple saliency measures.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional embedded PDF (if you want, can be removed) -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Preprint</h2>
+        <!-- TODO: update PDF path or remove this block -->
+        <iframe src="assets/SeeingJustEnoughPaper.pdf" width="100%" height="1000"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <button class="button is-small is-info" onclick="copyBibtex()">Copy BibTeX</button>
+<pre id="bibtex-entry"><code>@article{Rybansky:SeeingJustEnough:bioRxiv:2026,
+  author  = {Rybansky, Filip and Rahmaniboldaji, Sadegh and Gilbert, Andrew and Guerin, Frank and Hurlbert, Anya C. and Vuong, Quoc C.},
+  title   = {Seeing Just Enough: The Contribution of Hands, Objects and Visual Features to Egocentric Action Recognition},
+  journal = {bioRxiv},
+  year    = {2026},
+  doi     = {10.64898/2026.02.15.705896},
+  url     = {https://doi.org/10.64898/2026.02.15.705896}
+}</code></pre>
+      <script>
+        function copyBibtex() {
+          var bib = document.getElementById('bibtex-entry').innerText;
+          navigator.clipboard.writeText(bib);
+        }
+      </script>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <div class="container">
+      <h2 class="title is-3">Frequently Asked Questions</h2>
+      <div class="content">
+        <h3>What problem does this work address?</h3>
+        <p>
+          We ask which visual features are minimally sufficient for humans to recognise everyday hand–object actions from egocentric videos, and how these features relate to hierarchical theories of visual processing.
+        </p>
+
+        <h3>How is this different from the Epic ReduAct work?</h3>
+        <p>
+          Epic ReduAct compared human and model performance under spatial reductions. Here we focus solely on human observers and use MIRCs to dissect the contribution of hands, objects, background and mid-level features such as orientation and motion signals.
+        </p>
+
+        <h3>Where can I find the stimuli and code?</h3>
+        <p>
+          All code and data used to derive MIRCs, compute semantic similarity and run the feature importance analyses are available on our
+          <a href="https://github.com/filip1O/Seeing-Just-Enough-The-Contribution-of-Visual-Features-to-Egocentric-Action-Recognition" target="_blank">GitHub repository</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              <strong>Seeing Just Enough: The Contribution of Hands, Objects and Visual Features to Egocentric Action Recognition</strong>
+              by
+              <a href="https://github.com/filip1O" target="_blank">Filip Rybansky</a>,
+              <a href="#" target="_blank">Sadegh Rahmaniboldaji</a>,
+              <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>,
+              <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a>,
+              <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/annahurlbert.html" target="_blank">Anya C. Hurlbert</a>,
+              and
+              <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc C. Vuong</a>.
+              <br><br>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+              which was adopted from the
+              <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the design of this website; we just ask that you link back to this page in the footer.
+              <br>
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                Creative Commons Attribution-ShareAlike 4.0 International License
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- (Optional) Statcounter or other analytics can go here -->
+
+</body>
+</html>
